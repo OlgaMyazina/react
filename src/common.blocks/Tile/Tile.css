@@ -7,7 +7,6 @@
   grid-auto-rows: min-content;
 }
 /*todo: перенести стили в mod: _size*/
-
 .Tile_size_s {
   grid-column: span 2;
 }
@@ -22,13 +21,3 @@
 .Tile-Header {
   display: grid;
 }
-
-/*todo: перенести стили в mod: _type*/
-/*
-.Tile_type_info .Tile-Header {
-  background: #fafafa;
-}
-
-.Tile_type_critical .Tile-Header {
-  background: #db5341;
-}*/

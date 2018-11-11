@@ -6,12 +6,14 @@ import { DeviceEvent } from '../EventsPage';
 import './Tile.css';
 import { TileTypeInfo } from './_type/Tile_type_info';
 import { TileTypeCritical } from './_type/Tile_type_critical';
+import { DataType } from '../TileData';
 
 export interface ITileProps extends IClassNameProps {
   event: DeviceEvent;
 
   //mod
   type: 'critical' | 'info';
+  dataType: DataType;
   text?: string;
   size?: 's' | 'm' | 'l';
 }

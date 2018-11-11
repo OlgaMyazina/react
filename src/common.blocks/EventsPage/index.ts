@@ -13,7 +13,7 @@ export interface DeviceEvent {
   size: EventSize;
 }
 
-export type EventData = EventDataAudio | EventDataGraph | EventDataImage | EventDataButtons;
+export type EventData = EventDataAudio | EventDataGraph; //| EventDataImage | EventDataButtons | EventDataClimat;
 
 export type EventSize = 's' | 'm' | 'l';
 
@@ -35,4 +35,9 @@ export interface EventDataImage {
 }
 export interface EventDataButtons {
   buttons: string[];
+}
+
+export interface EventDataClimat {
+  temperature: number;
+  humidity: number;
 }
