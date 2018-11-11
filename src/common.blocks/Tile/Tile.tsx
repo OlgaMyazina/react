@@ -9,7 +9,7 @@ import Icon from '../Icon';
 
 export default class Tile extends Component<ITileProps> {
   event: DeviceEvent;
-  className: string;
+
   cnTile: ClassNameFormatter;
   cnHeader: ClassNameFormatter;
   cnInfo: ClassNameFormatter;
@@ -17,15 +17,18 @@ export default class Tile extends Component<ITileProps> {
     super(props);
     this.event = props.event;
     this.cnTile = cn('Tile');
-    this.className = props.className;
     this.cnHeader = cn('Header');
     this.cnInfo = cn('Info');
   }
 
+  getCnTile() {
+    return this.cnTile;
+  }
+
   render() {
     return (
-      <article className={this.cnTile()}>
-        <header className={this.cnTile('Header', ['Header'])}>
+      <article className={this.props.className}>
+        <header className={this.cnTile('Header')}>
           <Icon className={this.cnHeader('Icon')} urlName={this.event.icon} />
           <h1 className={this.cnHeader('Title')}>{this.event.title}</h1>
           <section className={this.cnTile('Info', ['Info'])}>

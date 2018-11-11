@@ -17,7 +17,10 @@ export default class Menu extends Component<IMenuProps> {
   //todo: вынести данные
   render() {
     return (
-      <Nav list={['События', 'Сводка', 'Устройства', 'Сценарии']} class={this.cnMenu({ isOpen: this.props.isOpen })} />
+      <Nav
+        list={['События', 'Сводка', 'Устройства', 'Сценарии']}
+        className={this.cnMenu({ isOpen: this.props.isOpen })}
+      />
     );
   }
 }

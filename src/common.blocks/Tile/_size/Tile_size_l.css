@@ -1,0 +1,4 @@
+.Tile_size_l {
+  grid-column: span 4;
+  grid-row: span 3;
+}

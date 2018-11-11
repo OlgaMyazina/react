@@ -7,22 +7,22 @@ interface IList {
   list: string[];
 }
 interface IClassName {
-  class?: string;
+  className?: string;
 }
 
 export default class Nav extends Component<IList & IClassName> {
   cnNav: ClassNameFormatter;
-  class: string;
+  className: string;
   list: [];
   constructor(props: any) {
     super(props);
     this.list = props.list;
-    this.class = props.class;
+    this.className = props.className;
     this.cnNav = cn('Nav');
   }
   render() {
     return (
-      <nav className={this.class}>
+      <nav className={this.className}>
         <ul className={this.cnNav()}>
           {this.list.map((item, index) => {
             return (

@@ -18,7 +18,7 @@ export default class EventsPage extends React.Component {
     return (
       <main className="EventsPage">
         {this.events.map((event: DeviceEvent, index: number) => {
-          return <Tile key={index} event={event} size={event.size} />;
+          return <Tile key={index} event={event} size={event.size} type={event.type} />;
         })}
       </main>
     );

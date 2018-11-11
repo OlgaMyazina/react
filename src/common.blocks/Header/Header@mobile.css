@@ -1,0 +1,40 @@
+.Header {
+  height: 4.5rem;
+
+  border: initial;
+
+  grid-template:
+    'logo icon'
+    'nav nav';
+  grid-auto-columns: auto;
+  grid-template-rows: auto 1px;
+}
+.Header-Logo {
+  padding-left: 1.25rem;
+}
+.Header-Nav {
+  position: relative;
+  top: 4.5rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  opacity: 0;
+  background: white;
+
+  justify-self: center;
+}
+
+.Button_picture_burger {
+  display: block;
+
+  cursor: pointer;
+
+  grid-area: icon;
+}
+
+.Header-Nav.isOpen {
+  opacity: 1;
+}
