@@ -1,9 +1,7 @@
-//import path from 'path';
-//import ExtractTextWebpackPlugin from 'extract-text-webpack-plugin';
-//import HtmlWebpackPlugin from 'html-webpack-plugin';
 const path = require('path');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: {
@@ -30,15 +28,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextWebpackPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader']
-        })
+        use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader']
       }
     ]
   },
   plugins: [
-    new ExtractTextWebpackPlugin({ filename: 'style.css' }),
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'public', 'index.html'),
       filename: 'index.html'

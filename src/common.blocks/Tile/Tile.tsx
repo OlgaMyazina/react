@@ -4,43 +4,10 @@ import * as ReactDOM from 'react-dom';
 import { cn, ClassNameFormatter } from '@bem-react/classname';
 
 import { ITileProps } from './index';
+import { DeviceEvent } from '../EventsPage';
+import Icon from '../Icon';
 
-export interface DeviceEvent {
-  type: string;
-  title: string;
-  source: string;
-  time: string;
-  description: null | string;
-  icon: string;
-  data: EventData | undefined;
-  size: EventSize;
-}
-
-export type EventData = EventDataAudio | EventDataGraph | EventDataImage | EventDataButtons;
-
-export type EventSize = 's' | 'm' | 'l';
-
-export interface EventDataAudio {
-  albumcover: string;
-  artist: string;
-  track: {
-    name: string;
-    length: string;
-  };
-  volume: number;
-}
-export interface EventDataGraph {
-  type: 'graph';
-  values: object[];
-}
-export interface EventDataImage {
-  image: string;
-}
-export interface EventDataButtons {
-  buttons: string[];
-}
-
-export default class Tile extends Component {
+export default class Tile extends Component<ITileProps> {
   event: DeviceEvent;
   className: string;
   cnTile: ClassNameFormatter;
@@ -59,11 +26,11 @@ export default class Tile extends Component {
     return (
       <article className={this.cnTile()}>
         <header className={this.cnTile('Header', ['Header'])}>
-          <div className={this.cnHeader('Icon')} />
-          <h1 className={this.cnHeader('Title')} />
+          <Icon className={this.cnHeader('Icon')} urlName={this.event.icon} />
+          <h1 className={this.cnHeader('Title')}>{this.event.title}</h1>
           <section className={this.cnTile('Info', ['Info'])}>
-            <p className={this.cnInfo('Source')} />
-            <time className={this.cnInfo('Time')} />
+            <p className={this.cnInfo('Source')}>{this.event.source}</p>
+            <time className={this.cnInfo('Time')}>{this.event.time}</time>
           </section>
         </header>
         <p className={this.cnTile('Description')} />

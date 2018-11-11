@@ -1,0 +1,8 @@
+.Tile {
+  position: relative;
+
+  border-radius: 1.25rem;
+  background: #fafafa;
+
+  grid-auto-rows: min-content;
+}
