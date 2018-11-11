@@ -1,0 +1,50 @@
+{
+  "name": "bem-react-core",
+  "version": "1.0.0",
+  "description": "homework bem-react-core",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --content-base=public --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlgaMyazina/react.git"
+  },
+  "author": "Olga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlgaMyazina/react/issues"
+  },
+  "homepage": "https://github.com/OlgaMyazina/react#readme",
+  "devDependencies": {
+    "@bem-react/classname": "^1.1.1",
+    "@bem-react/core": "^1.2.0",
+    "@bem-react/di": "^1.0.3",
+    "@types/react": "^16.7.1",
+    "@types/react-dom": "^16.0.9",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "bem-react": "git+https://github.com/bem/bem-react-core.git#v3",
+    "css-loader": "^1.0.1",
+    "device-detector-js": "^1.0.18",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.0",
+    "typescript": "^3.1.6",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-scripts": "^2.1.1"
+  }
+}
