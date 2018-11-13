@@ -18,13 +18,9 @@ const cnEventsPage = cn('EventsPage');
 export const App: React.SFC = () => (
   <RegistryConsumer>
     {registries => {
-      // reading App registry
-      console.log(registries);
       const registry = registries[cnApp()];
       const Header = registry.get<IHeaderProps>(cnHeader());
       const EventsPage = registry.get(cnEventsPage());
-      // taking desktop or mobile version
-      //const Button = registry.get<IButtonProps>(cnHeader());
 
       return (
         <div className="Page">

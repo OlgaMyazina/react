@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Component, Fragment } from 'react';
 import { cn } from '@bem-react/classname';
 
+import './Footer.css';
+
 import Nav from '../Nav';
 
 export default class Footer extends Component {

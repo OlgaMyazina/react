@@ -28,13 +28,13 @@ export default class Audio extends Component<IAudioProps> {
           <p className={this.cnAudio('Artist')}>{this.props.audioData.artist}-</p>
           <p className={this.cnAudio('TrackName')}>{this.props.audioData.track.name}</p>
         </div>
-        <label className={this.cnAudio('TrackDuration')}>
+        <label className={this.cnAudio('TrackLabel')}>
           <input type="range" className={this.cnAudio('Track')} min="0" max={this.props.audioData.track.length} />
         </label>
-
-        <Button picture="next" urlImg="images/Next.svg" />
-        <Button picture="prev" urlImg="images/Prev.svg" />
-        <label className={this.cnAudio('VolumeValue')}>
+        <p className={this.cnAudio('Duration')}>4:31</p>
+        <Button className={this.cnAudio('ButtonPrev')} picture="prev" urlImg="images/Prev.svg" />
+        <Button className={this.cnAudio('ButtonNext')} picture="next" urlImg="images/Prev.svg" />
+        <label className={this.cnAudio('VolumeLabel')}>
           <input
             type="range"
             className={this.cnAudio('Volume')}
@@ -43,6 +43,7 @@ export default class Audio extends Component<IAudioProps> {
             max="100"
           />
         </label>
+        <p className={this.cnAudio('VolumeValue')}>80%</p>
       </section>
     );
   }

@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import './EventsPage.css';
+
 import { Tile } from '../Tile';
 import {
   DeviceEvent,

@@ -1,12 +1,14 @@
 import { withBemMod, ModBody } from '@bem-react/core';
+import React = require('react');
+
+import './TileData_dataType_image.css';
 
 import { ITileDataProps } from '../index';
 import TileData from '../TileData';
 import Picture from '../../Picture';
-import React = require('react');
 
 export interface IPictureProps {
-  className: string;
+  //className: string;
   sourceSrcset: string;
   imgSrc: string;
   imgSrcset: string;
@@ -14,15 +16,15 @@ export interface IPictureProps {
 }
 //todo: вынести отдельно
 const graphPictureProps = {
-  className: this.className,
+  //className: '',
   sourceSrcset: '',
   imgSrc: './images/Bitmap.png',
   imgSrcset: './images/Bitmap2x.png 2x, ./images/Bitmap3x.png 3x',
   imgAlt: 'Пылесос'
 };
 
-const DataImage: ModBody<ITileDataProps> = (TileData, { className }) => (
-  <Picture className={className} {...graphPictureProps} />
-);
+const DataImage: ModBody<ITileDataProps> = (TileData, { className }) => {
+  return <Picture className={className} {...graphPictureProps} />;
+};
 
 export const TileDataImage = withBemMod<ITileDataProps>('TileData', { dataType: 'image' }, DataImage);

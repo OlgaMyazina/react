@@ -21,7 +21,6 @@ export default class Button extends Component<IButtonProps> {
       <div
         className={this.className}
         onClick={() => {
-          console.log('test-inline');
           this.props.onClick;
         }}
       >

@@ -1,4 +1,27 @@
 .Footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  height: 4rem;
+
+  border-top: 1px solid #f0f0f0;
+}
+.Footer-Nav {
+  text-align: left;
+  letter-spacing: 0.01px;
+
+  color: #858585;
+
+  font-family: ArialMT;
+  font-size: 0.75rem;
+}
+.Footer-Copy {
+  text-align: left;
+  letter-spacing: 0.01px;
+
+  color: #858585;
+
+  font-family: ArialMT;
+  font-size: 12px;
 }

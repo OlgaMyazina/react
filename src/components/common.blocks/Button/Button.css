@@ -6,6 +6,7 @@
   width: 8.25rem;
   height: 3.375rem;
 
+  cursor: pointer;
   text-align: left;
 
   color: #000000;
@@ -19,4 +20,8 @@
 
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
+}
+
+.Button:hover {
+  background: #ffd93e;
 }

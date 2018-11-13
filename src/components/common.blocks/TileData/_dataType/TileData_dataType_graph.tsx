@@ -1,23 +1,24 @@
 import { withBemMod, ModBody } from '@bem-react/core';
+import React = require('react');
+
+import './TileData_dataType_graph.css';
 
 import { ITileDataProps } from '../index';
-import TileData from '../TileData';
 import Picture from '../../Picture';
-import React = require('react');
 
 export interface ITileDataGraph extends ITileDataProps {
   dataType: 'graph';
 }
 
 export interface IPictureProps {
-  className: string;
+  //className: string;
   sourceSrcset: string;
   imgSrc: string;
   imgSrcset: string;
   imgAlt: string;
 }
 const graphPictureProps = {
-  className: this.className,
+  //className: this.className,
   sourceSrcset: './images/Richdata.svg',
   imgSrc: './images/Richdata.png',
   imgSrcset: './images/Richdata@2x.png 2x, ./images/Richdata@3x.png 3x',

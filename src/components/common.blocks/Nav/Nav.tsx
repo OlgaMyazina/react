@@ -13,22 +13,17 @@ interface IClassName {
 }
 
 export default class Nav extends Component<IList & IClassName> {
-  cnNav: ClassNameFormatter;
-  className: string;
-  list: [];
-  constructor(props: any) {
-    super(props);
-    this.list = props.list;
-    this.className = props.className;
-    this.cnNav = cn('Nav');
-  }
+  list = this.props.list;
+
+  cnNav = cn('Nav');
+
   render() {
     return (
-      <ul className={this.cnNav()}>
+      <ul className={this.cnNav(null, [this.props.className])}>
         {this.list.map((item, index) => {
           return (
-            <li key={index} className={this.cnNav('Item')}>
-              <a href="#" className={`${this.cnNav('Link', ['ItemLink'])}`}>
+            <li key={index} className={this.cnNav('Item', [this.props.className])}>
+              <a href="#" className={`${this.cnNav('Link', ['ItemLink', this.props.className])}`}>
                 {item}
               </a>
             </li>

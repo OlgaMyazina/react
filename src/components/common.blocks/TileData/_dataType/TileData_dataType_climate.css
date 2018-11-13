@@ -1,9 +1,14 @@
 .Data_dataType_climate {
   display: flex;
 
+  margin: 0;
+  padding: 0;
   padding-right: 3.25rem;
 }
 .Tile-Data-Temperature {
+  margin: 0;
+  padding: 0;
+
   text-align: left;
 
   color: #000000;
@@ -13,6 +18,9 @@
 }
 
 .Tile-Data-Humidity {
+  margin: 0;
+  padding: 0;
+
   text-align: left;
 
   color: #000000;
@@ -32,6 +40,9 @@
 }
 
 .Tile-Data-HumidityValue {
+  margin: 0;
+  padding: 0;
+
   text-align: left;
 
   color: #000000;

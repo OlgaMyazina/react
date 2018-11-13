@@ -1,10 +1,23 @@
 .Tile_size_s {
+  display: flex;
+  flex-direction: column;
+
+  grid-column: span 2;
   grid-column: span 2;
 }
-.Tile_size_m {
-  grid-column: span 3;
+
+.TileHeader-Source_size_s {
+  padding-top: 1rem;
+
+  grid-column: 1 / span 4;
 }
-.Tile_size_l {
-  grid-column: span 4;
-  grid-row: span 3;
+.TileHeader-Time_size_s {
+  padding-top: 1rem;
+
+  text-align: left;
+
+  grid-column: 1 / span 4;
+}
+.Tile-Description_size_s {
+  font-size: 1.25rem;
 }

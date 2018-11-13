@@ -1,4 +1,7 @@
 .Tile_size_s {
+  display: flex;
+  flex-direction: column;
+
   grid-column: span 2;
 }
 

@@ -6,6 +6,7 @@ import { IButtonProps } from '../index';
 import './Button_picture_prev.css';
 
 const ButtonPrev: ModBody<IButtonProps> = (Base, { className }) => {
+  console.log(className);
   const cnButtonPrev = cn(className);
   return (
     <a className={className}>
@@ -14,4 +15,4 @@ const ButtonPrev: ModBody<IButtonProps> = (Base, { className }) => {
   );
 };
 
-export const ButtonPicturePrev = withBemMod<IButtonProps>('Button', { picture: 'prev' }, ButtonPrev);
+export const ButtonPicturePrev = withBemMod<IButtonProps>('ButtonPrev', { picture: 'prev' }, ButtonPrev);

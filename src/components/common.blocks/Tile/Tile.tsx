@@ -34,34 +34,19 @@ export default class Tile extends Component<ITileProps> {
       <article className={this.props.className}>
         <TileHeader
           type={this.props.event.type}
+          /*className={this.cnTile('Header')}*/
           className={this.cnTile('Header')}
           urlName={this.props.event.icon}
           title={this.props.event.title}
           source={this.props.event.source}
           time={this.props.event.time}
+          size={this.props.event.size}
         />
         <section className={this.cnTile('InfoData')}>
-          <p className={this.cnTile('Description')}>{this.props.event.description}</p>
+          <p className={this.cnTile('Description', { size: this.props.size })}>{this.props.event.description}</p>
           <TileData className={this.cnTile('Data')} dataType={this.props.dataType} data={this.props.event.data} />
         </section>
       </article>
     );
   }
 }
-/**
- * {
-	"resource": "/Users/olga/Documents/ШРИ/Домашние работы/react-bem-core/src/components/common.blocks/Tile/Tile.tsx",
-	"owner": "typescript",
-	"code": "2322",
-	"severity": 8,
-  "message": "Тип "{ classname: string; urlName: string; title: string; source: string; time: string; }
-  " не может быть назначен для типа 
-  "Readonly<ITileHeaderProps>\".\n  Свойство \"event\" отсутствует в типе \
-     "{ classname: string; urlName: string; title: string; source: string; time: string; }\".",
-	"source": "ts",
-	"startLineNumber": 35,
-	"startColumn": 8,
-	"endLineNumber": 35,
-	"endColumn": 18
-}
- */

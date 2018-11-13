@@ -1,6 +1,16 @@
 .Tile_type_critical {
-  /*z-index: -1;*/
   color: white;
   border-radius: 20px 20px 0 0;
   background: #db5341;
 }
+/*
+.Tile-Source {
+  color: white;
+}
+.Tile-Title {
+  color: white;
+}
+.Tile-Time {
+  color: white;
+}
+*/

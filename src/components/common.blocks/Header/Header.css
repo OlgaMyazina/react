@@ -21,6 +21,12 @@
 .Header-Nav {
   position: relative;
 
+  color: #333333;
+
+  font-family: Arial-BoldMT;
+  font-size: 1rem;
+  line-height: 1.25rem;
+
   grid-area: nav;
   justify-self: left;
 }

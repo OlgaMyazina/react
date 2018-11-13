@@ -1,5 +1,6 @@
-.ButtonPrev {
+.ButtonNext {
   cursor: pointer;
+  transform: rotate(180deg);
 
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;

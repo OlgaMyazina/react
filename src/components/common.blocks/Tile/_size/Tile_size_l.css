@@ -2,3 +2,15 @@
   grid-column: span 4;
   grid-row: span 3;
 }
+.TileHeader-Source_size_l {
+  grid-column: 1 / span 2;
+}
+.TileHeader-Time_size_l {
+  text-align: right;
+
+  grid-column: 3 / span 2;
+}
+
+.Tile-Description_size_l {
+  font-size: 1.5rem;
+}

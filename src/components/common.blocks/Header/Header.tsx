@@ -8,7 +8,6 @@ import './Header.css';
 import Logo from '../Logo/Logo';
 import Menu from '../Menu';
 import { Button } from '../Button';
-//import './Header.css';
 
 const cnHeader = cn('Header');
 
@@ -28,11 +27,9 @@ export default class Header extends Component<IHeaderProps, IState> {
     };
   }
   handleClick = () => {
-    console.log(`click`);
     this.setState({ isOpen: !this.state.isOpen });
   };
   render() {
-    console.log(this.state);
     return (
       <header className={cnHeader()}>
         <Logo className={cnHeader('Logo')} />

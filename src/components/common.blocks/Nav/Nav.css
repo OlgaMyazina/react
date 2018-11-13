@@ -1,5 +1,5 @@
 .Nav {
-  display: inline-grid;
+  display: flex;
 
   padding: 0;
 
@@ -15,11 +15,6 @@
   text-decoration: none;
 
   opacity: 0.6;
-  color: #333333;
-
-  font-family: Arial-BoldMT;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .ItemLink:hover {

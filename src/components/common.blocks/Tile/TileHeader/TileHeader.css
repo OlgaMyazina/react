@@ -1,0 +1,33 @@
+.TileHeader-Title {
+  align-self: center;
+
+  margin: 0;
+  padding: 0 0 1rem 1rem;
+
+  text-align: left;
+
+  font-family: Arial-BoldMT;
+  font-size: 1.5rem;
+
+  grid-column: 2 / span 3;
+}
+.TileHeader-Source {
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: ArialMT;
+  font-size: 1.125rem;
+}
+.TileHeader-Time {
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: ArialMT;
+  font-size: 1.125rem;
+
+  grid-column: 3 / span 2;
+}

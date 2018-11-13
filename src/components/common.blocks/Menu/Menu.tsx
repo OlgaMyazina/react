@@ -20,8 +20,6 @@ export default class Menu extends Component<IMenuProps> {
   }
   //todo: вынести данные
   render() {
-    console.log(`menu render()`);
-    console.log(this.cnMenu({ isOpen: this.props.isOpen }, [this.cnClassName]));
     return (
       <nav className={this.cnMenu({ isOpen: this.props.isOpen }, [this.cnClassName])}>
         <Nav
