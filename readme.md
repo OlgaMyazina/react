@@ -1,6 +1,11 @@
 #BEM
 
-device detector не настроен, переключение сборок c помощью import файле src/index.tsx
+desktop версия:
+https://olgamyazina.github.io/react/
+
+mobile версия:
+https://olgamyazina.github.io/react/index_mobile.html
+
 Для build сборки запустить :
 
 ```
