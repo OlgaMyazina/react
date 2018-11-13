@@ -5,7 +5,7 @@ import './TileData_dataType_image.css';
 
 import { ITileDataProps } from '../index';
 import TileData from '../TileData';
-import Picture from '../../Picture';
+import Picture from '../../../Picture';
 
 export interface IPictureProps {
   //className: string;

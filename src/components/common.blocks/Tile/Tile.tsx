@@ -1,40 +1,25 @@
 import * as React from 'react';
 import { Component } from 'react';
-import * as ReactDOM from 'react-dom';
-import { cn, ClassNameFormatter } from '@bem-react/classname';
+import { cn } from '@bem-react/classname';
 
 import './Tile.css';
 
 import { ITileProps } from './index';
 import { DeviceEvent } from '../EventsPage';
-import Icon from '../Icon';
-import { TileData } from '../TileData';
-import { Header } from '../../desktop.blocks/Header/Header@desktop';
+import { TileData } from './TileData';
 import { TileHeader } from './TileHeader';
 
 export default class Tile extends Component<ITileProps> {
   event: DeviceEvent;
 
-  cnTile: ClassNameFormatter;
-  cnHeader: ClassNameFormatter;
-  cnInfo: ClassNameFormatter;
-  constructor(props: any) {
-    super(props);
-    this.cnTile = cn('Tile');
-    this.cnHeader = cn('Header');
-    this.cnInfo = cn('Info');
-  }
-
-  getCnTile() {
-    return this.cnTile;
-  }
+  cnTile = cn('Tile');
+  cnApp = cn('App');
 
   render() {
     return (
       <article className={this.props.className}>
         <TileHeader
           type={this.props.event.type}
-          /*className={this.cnTile('Header')}*/
           className={this.cnTile('Header')}
           urlName={this.props.event.icon}
           title={this.props.event.title}

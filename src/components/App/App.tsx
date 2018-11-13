@@ -4,10 +4,6 @@ import { RegistryConsumer } from '@bem-react/di';
 
 import './App.css';
 
-//import { IButtonProps } from '../Button/Button';
-
-import Header from '../common.blocks/Header';
-import EventsPage from '../common.blocks/EventsPage/EventsPage';
 import Footer from '../common.blocks/Footer/Footer';
 import { IHeaderProps } from '../common.blocks/Header/Header';
 
@@ -32,7 +28,6 @@ export const App: React.SFC = () => (
           <Footer />
         </div>
       );
-      //return <Button text="Hello there!" />;
     }}
   </RegistryConsumer>
 );

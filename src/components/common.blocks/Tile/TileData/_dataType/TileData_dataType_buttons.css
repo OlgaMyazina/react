@@ -1,5 +1,6 @@
 .Buttons {
   display: flex;
+  justify-content: space-around;
 }
 
 .Button_dataType_buttons {

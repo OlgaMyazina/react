@@ -6,7 +6,6 @@ import { IButtonProps } from '../index';
 import './Button_picture_prev.css';
 
 const ButtonPrev: ModBody<IButtonProps> = (Base, { className }) => {
-  console.log(className);
   const cnButtonPrev = cn(className);
   return (
     <a className={className}>

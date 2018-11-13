@@ -3,7 +3,7 @@ import { withBemMod, ModBody } from '@bem-react/core';
 import { cn } from '@bem-react/classname';
 
 import { ITileDataProps } from '../index';
-import { EventDataClimat } from '../../EventsPage';
+import { EventDataClimat } from '../../../EventsPage';
 import './TileData_dataType_climate.css';
 
 const DataClimate: ModBody<ITileDataProps> = (TileData, { className, data }) => {

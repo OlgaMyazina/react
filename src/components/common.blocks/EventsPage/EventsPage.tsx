@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import './EventsPage.css';
 
-import { Tile } from '../Tile';
+import { ITileProps } from '../Tile';
 import {
   DeviceEvent,
   EventData,
@@ -12,8 +12,13 @@ import {
   EventDataButtons,
   EventDataClimat
 } from '.';
+import { DataType } from '../Tile/TileData';
+import { RegistryConsumer } from '@bem-react/di';
+import { cn } from '@bem-react/classname';
 
 export default class EventsPage extends React.Component {
+  cnApp = cn('App');
+  cnTile = cn('Tile');
   events: [] = [];
   componentDidMount() {
     fetch('data/events.json')
@@ -42,8 +47,8 @@ export default class EventsPage extends React.Component {
     return typeof (eventData as EventDataClimat).temperature !== 'undefined';
   }
 
-  getDataType(eventData: any): string {
-    let dataType: string = 'null';
+  getDataType(eventData: any): DataType {
+    let dataType: DataType = 'null';
     if (eventData) {
       if (this.isEventDataAudio(eventData)) dataType = 'audio';
       if (this.isEventDataButtons(eventData)) dataType = 'buttons';
@@ -56,19 +61,30 @@ export default class EventsPage extends React.Component {
 
   render() {
     return (
-      <main className="EventsPage">
-        {this.events.map((event: DeviceEvent, index: number) => {
+      <RegistryConsumer>
+        {registries => {
+          const registry = registries[this.cnApp()];
+          const Tile = registry.get<ITileProps>(this.cnTile());
+
           return (
-            <Tile
-              key={index}
-              event={event}
-              size={event.size}
-              type={event.type}
-              dataType={this.getDataType(event.data)}
-            />
+            <main className="EventsPage">
+              {this.events.map((event: DeviceEvent, index: number) => {
+                console.log(event);
+                console.log(Tile);
+                return (
+                  <Tile
+                    key={index}
+                    event={event}
+                    size={event.size}
+                    type={event.type}
+                    dataType={this.getDataType(event.data)}
+                  />
+                );
+              })}
+            </main>
           );
-        })}
-      </main>
+        }}
+      </RegistryConsumer>
     );
   }
 }

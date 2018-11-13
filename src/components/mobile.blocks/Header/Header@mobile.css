@@ -4,7 +4,8 @@
 
   border: initial;
 
-  grid-template:
+  grid-template-columns: 7.5rem auto;
+  grid-template-areas:
     'logo icon'
     'nav nav';
 }
@@ -23,7 +24,6 @@
   background: white;
 
   justify-self: center;
-  grid-column: 1 / span2;
 }
 
 .Header-Button {
@@ -31,7 +31,6 @@
 
   cursor: pointer;
 
-  grid-area: icon;
   grid-area: icon;
 }
 

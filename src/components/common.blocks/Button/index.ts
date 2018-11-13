@@ -9,10 +9,9 @@ import { ButtonPicturePrev } from './_picture/Button_picture_prev';
 
 export interface IButtonProps extends IClassNameProps {
   text: string;
-  on: () => void;
   onClick: () => void;
 
-  picture?: 'burger';
+  picture?: 'burger' | 'next' | 'prev';
 }
 
 export const Button = compose(

@@ -13,7 +13,7 @@ export interface IAudioData {
   volume: string;
 }
 
-interface IAudioProps {
+export interface IAudioProps {
   audioData: IAudioData;
   className: string;
 }
@@ -32,8 +32,8 @@ export default class Audio extends Component<IAudioProps> {
           <input type="range" className={this.cnAudio('Track')} min="0" max={this.props.audioData.track.length} />
         </label>
         <p className={this.cnAudio('Duration')}>4:31</p>
-        <Button className={this.cnAudio('ButtonPrev')} picture="prev" urlImg="images/Prev.svg" />
-        <Button className={this.cnAudio('ButtonNext')} picture="next" urlImg="images/Prev.svg" />
+        <Button className={this.cnAudio('ButtonPrev')} picture="prev" text="" onClick={() => {}} />
+        <Button className={this.cnAudio('ButtonNext')} picture="next" text="" onClick={() => {}} />
         <label className={this.cnAudio('VolumeLabel')}>
           <input
             type="range"

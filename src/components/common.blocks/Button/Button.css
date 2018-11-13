@@ -22,6 +22,6 @@
   -o-border-radius: 0.5rem;
 }
 
-.Button:hover {
+.ButtonHover:hover {
   background: #ffd93e;
 }

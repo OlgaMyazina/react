@@ -1,3 +1,3 @@
-import Audio from './Audio';
+import AudioBase from './Audio';
 import './Audio.css';
-export default Audio;
+export const Audio = AudioBase;

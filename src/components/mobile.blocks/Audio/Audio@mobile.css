@@ -1,0 +1,12 @@
+.Audio {
+  grid-template-areas: 'cover artistBlock artistBlock .' 'cover track track duration' 'prev next rvolume vvolume';
+  grid-template-rows: 1.3rem 1.3rem 3.25rem;
+  grid-template-columns: 3.3rem 3.3rem 7rem 1.8rem;
+  grid-gap: 0.5rem;
+}
+.Audio-Artist {
+  font-size: 1.125rem;
+}
+.Audio-TrackName {
+  font-size: 1.125rem;
+}

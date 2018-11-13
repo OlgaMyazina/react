@@ -6,10 +6,6 @@ import './Button_picture_next.css';
 
 import { IButtonProps } from '../index';
 
-export interface IButtonNextProps extends IButtonProps {
-  urlImg: string;
-}
-
 const ButtonNext: ModBody<IButtonProps> = (Base, { className }) => {
   const cnButtonNext = cn(className);
   return (

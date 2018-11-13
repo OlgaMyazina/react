@@ -4,7 +4,8 @@ import React = require('react');
 import './TileData_dataType_graph.css';
 
 import { ITileDataProps } from '../index';
-import Picture from '../../Picture';
+
+import Picture from '../../../Picture';
 
 export interface ITileDataGraph extends ITileDataProps {
   dataType: 'graph';
