@@ -1,0 +1,11 @@
+.Page-Container {
+  margin: 0 1.125rem;
+}
+
+.Page-H1 {
+  font-size: 1.5rem;
+}
+
+.Footer {
+  display: none;
+}

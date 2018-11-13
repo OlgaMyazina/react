@@ -1,0 +1,26 @@
+.Header {
+  z-index: 1;
+
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+
+  width: 100%;
+
+  background: white;
+}
+
+.Header-Logo {
+  grid-area: logo;
+}
+
+.Header-Menu {
+}
+
+.Header-Nav {
+  position: relative;
+
+  grid-area: nav;
+  justify-self: left;
+}

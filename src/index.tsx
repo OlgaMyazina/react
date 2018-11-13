@@ -4,7 +4,8 @@ import * as ReactDOM from 'react-dom';
 
 //import DeviceDetector from 'device-detector-js';
 
-import App from './App';
+import { App } from './components/App/App@desktop';
+//import { App } from './components/App/App@mobile';
 //import Logo from './Logo';
 import { cn } from '@bem-react/classname';
 import { Registry, withRegistry } from '@bem-react/di';

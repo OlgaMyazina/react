@@ -1,0 +1,93 @@
+.Audio {
+  display: grid;
+  /*margin-top: 1rem;*/
+
+  grid-template-areas:
+    'cover artistBlock artistBlock .'
+    'cover track track trackDuration'
+    'prev next rvolume vvolume';
+  grid-template-rows: 1.3rem 1.3rem 3.25rem;
+  grid-template-columns: 3.3rem 3.3rem auto 2rem;
+  grid-gap: 1rem;
+}
+.Audio-Cover {
+  width: 3.3rem;
+  height: 3.3rem;
+
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+
+  grid-area: cover;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.Audio-ArtistBlock {
+  display: flex;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  color: #000000;
+
+  font-family: ArialMT;
+  font-size: 1.25rem;
+
+  grid-area: artistBlock;
+  -o-text-overflow: ellipsis;
+}
+.Audio-TrackDuration {
+  grid-area: track;
+}
+.Audio-Track {
+  grid-area: track;
+}
+.Audio-TrackName {
+}
+.Button_picture_next {
+  grid-area: next;
+}
+.Button_picture_prev {
+  grid-area: prev;
+}
+
+.length {
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Helvetica;
+  font-size: 14px;
+
+  grid-area: vtrack;
+}
+.prev {
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  grid-area: prev;
+}
+.Button_picture_next-IconNext {
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+
+  grid-area: next;
+}
+.Audio-Volume {
+  align-self: center;
+
+  width: 100%;
+
+  grid-area: rvolume;
+}
+.Audio-VolumeValue {
+  align-self: center;
+
+  grid-area: vvolume;
+}

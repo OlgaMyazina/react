@@ -1,0 +1,22 @@
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 8.25rem;
+  height: 3.375rem;
+
+  text-align: left;
+
+  color: #000000;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background: #e5e5e5;
+
+  font-family: Arial-BoldMT;
+  font-size: 1.25rem;
+
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
