@@ -1,4 +1,4 @@
-#BEM
+# BEM
 
 desktop версия:
 https://olgamyazina.github.io/react/
@@ -6,7 +6,7 @@ https://olgamyazina.github.io/react/
 mobile версия:
 https://olgamyazina.github.io/react/index_mobile.html
 
-Для build сборки запустить :
+Для production сборки запустить :
 
 ```
 npm run build
