@@ -4,7 +4,6 @@ import { cn } from '@bem-react/classname';
 import { RegistryConsumer } from '@bem-react/di';
 
 import { ITileDataProps } from '../index';
-import { Audio } from '../../../Audio';
 
 import { IAudioProps } from '../../../../common.blocks/Audio/Audio';
 

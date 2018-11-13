@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Component } from 'react';
-import * as ReactDOM from 'react-dom';
 import { cn } from '@bem-react/classname';
 
 import './Header.css';

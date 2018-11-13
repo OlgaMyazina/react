@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import * as ReactDOM from 'react-dom';
-import { cn, ClassNameFormatter } from '@bem-react/classname';
+import { cn } from '@bem-react/classname';
 
 export interface IPictureProps {
   className: string;

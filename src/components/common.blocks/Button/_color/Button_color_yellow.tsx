@@ -1,4 +1,4 @@
-import { withBemMod, ModBody } from '@bem-react/core';
+import { withBemMod } from '@bem-react/core';
 
 import { IButtonProps } from '../index';
 import './Button_color_yellow.css';

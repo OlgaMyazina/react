@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Component } from 'react';
-import * as ReactDOM from 'react-dom';
-import { cn, ClassNameFormatter, classnames } from '@bem-react/classname';
+import { cn, ClassNameFormatter } from '@bem-react/classname';
 
 import Picture from '../Picture';
 import { IPictureProps } from '../Picture/Picture';

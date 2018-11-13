@@ -1,4 +1,4 @@
-import { compose, IClassNameProps } from '@bem-react/core';
+import { compose } from '@bem-react/core';
 
 import Base from './../../common.blocks/Tile/Tile';
 import { TileSizeS } from '../../desktop.blocks/Tile/_size/Tile_size_s';

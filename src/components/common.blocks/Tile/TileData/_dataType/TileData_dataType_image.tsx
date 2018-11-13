@@ -4,11 +4,9 @@ import React = require('react');
 import './TileData_dataType_image.css';
 
 import { ITileDataProps } from '../index';
-import TileData from '../TileData';
 import Picture from '../../../Picture';
 
 export interface IPictureProps {
-  //className: string;
   sourceSrcset: string;
   imgSrc: string;
   imgSrcset: string;
@@ -16,7 +14,6 @@ export interface IPictureProps {
 }
 //todo: вынести отдельно
 const graphPictureProps = {
-  //className: '',
   sourceSrcset: '',
   imgSrc: './images/Bitmap.png',
   imgSrcset: './images/Bitmap2x.png 2x, ./images/Bitmap3x.png 3x',

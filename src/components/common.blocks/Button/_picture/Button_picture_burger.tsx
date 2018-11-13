@@ -3,7 +3,6 @@ import { withBemMod, ModBody } from '@bem-react/core';
 import { cn } from '@bem-react/classname';
 
 import { IButtonProps } from '../index';
-import Button from '../Button';
 import Picture from '../../Picture';
 
 import './Button_picture_burger.css';

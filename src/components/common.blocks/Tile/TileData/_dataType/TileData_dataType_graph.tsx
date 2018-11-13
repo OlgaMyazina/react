@@ -12,14 +12,12 @@ export interface ITileDataGraph extends ITileDataProps {
 }
 
 export interface IPictureProps {
-  //className: string;
   sourceSrcset: string;
   imgSrc: string;
   imgSrcset: string;
   imgAlt: string;
 }
 const graphPictureProps = {
-  //className: this.className,
   sourceSrcset: './images/Richdata.svg',
   imgSrc: './images/Richdata.png',
   imgSrcset: './images/Richdata@2x.png 2x, ./images/Richdata@3x.png 3x',

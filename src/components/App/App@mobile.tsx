@@ -17,7 +17,6 @@ const cnTile = cn('Tile');
 const cnAudio = cn('Audio');
 const cnButton = cn('Button');
 
-// registry with mobile versions of components
 const registry = new Registry({ id: cnApp() });
 
 registry.set(cnHeader(), Header);

@@ -3,7 +3,6 @@ import { cn } from '@bem-react/classname';
 import { App as AppCommon } from './App';
 import './App@desktop.css';
 import { Header } from '../desktop.blocks/Header/Header@desktop';
-//import { Header } from '../desktop.blocks/Header/Header@desktop';
 import { EventsPage } from '../desktop.blocks/EventsPage/EventsPage@desktop';
 import { Tile } from '../desktop.blocks/Tile';
 import { Audio } from '../common.blocks/Audio';
@@ -16,7 +15,6 @@ const cnTile = cn('Tile');
 const cnAudio = cn('Audio');
 const cnButton = cn('Button');
 
-// registry with desktop versions of components
 const registry = new Registry({ id: cnApp() });
 
 registry.set(cnHeader(), Header);

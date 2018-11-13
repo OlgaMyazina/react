@@ -6,12 +6,13 @@ const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, 'src', 'index.tsx')
+    mainDesktop: path.resolve(__dirname, 'src', 'index@desktop.tsx'),
+    mainMobile: path.resolve(__dirname, 'src', 'index@mobile.tsx')
   },
-  devtool: 'inline-source-map',
+  devtool: devMode ? 'inline-source-map' : false,
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -48,7 +49,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.css'
+      filename: '[name].css'
     }),
     new CopyWebpackPlugin([{ from: 'src/components/common.blocks/images', to: 'images/' }])
   ]
