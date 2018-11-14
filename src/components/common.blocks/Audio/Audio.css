@@ -1,0 +1,113 @@
+.Audio {
+  display: grid;
+  /*margin-top: 1rem;*/
+
+  grid-template-areas:
+    'cover artistBlock artistBlock .'
+    'cover track track duration'
+    'prev next rvolume vvolume';
+  grid-template-rows: 1.3rem 1.3rem 3.25rem;
+  grid-template-columns: 3.3rem 3.3rem auto 2rem;
+  grid-gap: 1rem;
+}
+.Audio-Cover {
+  width: 3.3rem;
+  height: 3.3rem;
+
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+
+  grid-area: cover;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.Audio-ArtistBlock {
+  display: flex;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  color: #000000;
+
+  font-family: ArialMT;
+  font-size: 1.25rem;
+
+  grid-area: artistBlock;
+  -o-text-overflow: ellipsis;
+}
+.Audio-Artist {
+  margin: 0;
+  padding: 0;
+
+  font-family: ArialMT;
+  font-size: 1.25rem;
+}
+.Audio-TrackName {
+  margin: 0;
+  padding: 0;
+
+  font-family: ArialMT;
+  font-size: 1.25rem;
+}
+.Audio-TrackLabel {
+  cursor: pointer;
+
+  grid-area: track;
+}
+.Audio-Track {
+  width: 100%;
+
+  cursor: pointer;
+
+  grid-area: track;
+}
+
+.Audio-ButtonNext {
+  grid-area: next;
+}
+.Audio-ButtonPrev {
+  grid-area: prev;
+}
+
+.Audio-VolumeLabel {
+  align-self: center;
+
+  width: 100%;
+
+  cursor: pointer;
+
+  grid-area: rvolume;
+}
+.Audio-Volume {
+  cursor: pointer;
+}
+.Audio-VolumeValue {
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Helvetica;
+  font-size: 14px;
+
+  grid-area: vvolume;
+}
+.Audio-Duration {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Helvetica;
+  font-size: 14px;
+
+  grid-area: duration;
+}

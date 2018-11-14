@@ -1,0 +1,8 @@
+.Buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Button_dataType_buttons {
+  margin-right: 1.125rem;
+}

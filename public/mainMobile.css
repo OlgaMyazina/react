@@ -1,0 +1,616 @@
+.Page-H1 {
+  text-align: left;
+
+  color: #333333;
+
+  font-family: Arial-BoldMT;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 4rem;
+
+  border-top: 1px solid #f0f0f0;
+}
+.Footer-Nav {
+  text-align: left;
+  letter-spacing: 0.01px;
+
+  color: #858585;
+
+  font-family: ArialMT;
+  font-size: 0.75rem;
+}
+.Footer-Copy {
+  text-align: left;
+  letter-spacing: 0.01px;
+
+  color: #858585;
+
+  font-family: ArialMT;
+  font-size: 12px;
+}
+
+.Nav {
+  display: flex;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.Nav-Item {
+  padding-left: 1.5rem;
+}
+
+.ItemLink {
+  cursor: pointer;
+  text-decoration: none;
+
+  opacity: 0.6;
+  opacity: 0.6;
+  color: #333333;
+
+  font-family: Arial-BoldMT;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.ItemLink:hover {
+  opacity: 1;
+}
+
+.Page-Container {
+  width: 100%;
+  margin: 0 1.125rem;
+}
+
+.Page-H1 {
+  font-size: 1.5rem;
+}
+
+.Footer {
+  display: none;
+}
+
+.Header {
+  width: 100%;
+  height: 2.5rem;
+
+  border: initial;
+
+  grid-template-columns: 7.5rem auto;
+  grid-template-areas:
+    'logo icon'
+    'nav nav';
+}
+.Header-Logo {
+  padding-left: 1.25rem;
+}
+.Header-Menu {
+  top: 4.5rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  opacity: 0;
+  background: white;
+
+  justify-self: center;
+}
+
+.Header-Button {
+  display: flex;
+
+  cursor: pointer;
+
+  grid-area: icon;
+}
+
+.Header-Menu {
+  z-index: 2;
+
+  width: 100%;
+
+  background: white;
+}
+
+.Header {
+  z-index: 1;
+
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+
+  width: 100%;
+
+  background: white;
+}
+
+.Header-Logo {
+  grid-area: logo;
+}
+
+.Header-Menu {
+}
+
+.Header-Nav {
+  position: relative;
+
+  color: #333333;
+
+  font-family: Arial-BoldMT;
+  font-size: 1rem;
+  line-height: 1.25rem;
+
+  grid-area: nav;
+  justify-self: left;
+}
+
+.Menu_isOpen {
+  opacity: 1;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 8.25rem;
+  height: 3.375rem;
+
+  cursor: pointer;
+  text-align: left;
+
+  color: #000000;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background: #e5e5e5;
+
+  font-family: Arial-BoldMT;
+  font-size: 1.25rem;
+
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.ButtonHover:hover {
+  background: #ffd93e;
+}
+
+.Button_picture_burger {
+  cursor: pointer;
+
+  background-color: #ffffff;
+}
+
+.ButtonNext {
+  cursor: pointer;
+  transform: rotate(180deg);
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  background-image: url(img/Prev.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.ButtonPrev {
+  cursor: pointer;
+
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  background-image: url(img/Prev.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.EventsPage {
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.EventsPage {
+  display: grid;
+
+  padding-top: 1rem;
+
+  grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-auto-flow: dense;
+}
+
+.Tile {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 1.25rem;
+  background: #fafafa;
+
+  grid-auto-rows: min-content;
+}
+.Tile-Container {
+  padding: 1rem;
+}
+
+.Tile-Header {
+  display: grid;
+
+  padding: 1rem;
+
+  -webkit-border-radius: 1.25rem 1.25rem 0 0;
+  -moz-border-radius: 1.25rem 1.25rem 0 0;
+  border-radius: 1.25rem 1.25rem 0 0;
+
+  -ms-border-radius: 1.25rem 1.25rem 0 0;
+  -o-border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.Tile-InfoData {
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+  margin: -1rem 0 0 0;
+  padding: 0 1rem 0 1rem;
+
+  border: 1px solid #fafafa;
+  border-radius: 1.25rem;
+  background: #fafafa;
+}
+.Tile-Description {
+  text-align: left;
+
+  color: #333333;
+
+  font-family: ArialMT;
+  font-size: 1.5rem;
+}
+
+.Data {
+  margin: 0;
+  padding: 0;
+}
+
+.TileData_dataType_graph {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  border-radius: 1.25rem;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Button_dataType_buttons {
+  margin-right: 1.125rem;
+}
+
+.TileData_dataType_image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  border-radius: 1.25rem;
+}
+
+.Data_dataType_climate {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  padding-right: 3.25rem;
+}
+.Tile-Data-Temperature {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: ArialMT;
+  font-size: 1.125rem;
+}
+
+.Tile-Data-Humidity {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: ArialMT;
+  font-size: 1.125rem;
+}
+
+.Tile-Data-TemperatureValue {
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Arial-BoldMT;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+}
+
+.Tile-Data-HumidityValue {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Arial-BoldMT;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+}
+
+.TileHeader-Title {
+  align-self: center;
+
+  margin: 0;
+  padding: 0 0 1rem 1rem;
+
+  text-align: left;
+
+  font-family: Arial-BoldMT;
+  font-size: 1.5rem;
+
+  grid-column: 2 / span 3;
+}
+.TileHeader-Source {
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: ArialMT;
+  font-size: 1.125rem;
+}
+.TileHeader-Time {
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: ArialMT;
+  font-size: 1.125rem;
+
+  grid-column: 3 / span 2;
+}
+
+.Icon {
+  width: 3.25rem;
+  height: 3.25rem;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.Tile_type_info {
+  color: #333333;
+  background: #fafafa;
+}
+
+.Tile_type_critical {
+  color: white;
+  border-radius: 20px 20px 0 0;
+  background: #db5341;
+}
+
+.TileHeader-Title {
+  font-family: Helvetica-Bold;
+  font-size: 0.875rem;
+}
+.TileHeader-Source {
+  font-size: 0.75rem;
+
+  grid-column: 1 / span 2;
+}
+.TileHeader-Time {
+  font-size: 0.75rem;
+
+  grid-column: 3 / span 2;
+}
+.Tile-Description {
+  font-family: Helvetica;
+  font-size: 1.125rem;
+}
+.Tile-Data-Temperature {
+  font-size: 0.875rem;
+}
+.Tile-Data-TemperatureValue {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.875rem;
+}
+.Tile-Data-Humidity {
+  font-size: 0.875rem;
+}
+.Tile-Data-HumidityValue {
+  font-size: 0.875rem;
+}
+.Tile-Data {
+  margin: 0;
+  padding: 0;
+}
+
+.Tile_size_s {
+  display: flex;
+  flex-direction: column;
+
+  grid-column: span 2;
+}
+
+.Tile_size_m {
+  grid-column: span 2;
+}
+
+.Tile_size_l {
+  grid-column: span 2;
+}
+
+.Audio {
+  display: grid;
+  /*margin-top: 1rem;*/
+
+  grid-template-areas:
+    'cover artistBlock artistBlock .'
+    'cover track track duration'
+    'prev next rvolume vvolume';
+  grid-template-rows: 1.3rem 1.3rem 3.25rem;
+  grid-template-columns: 3.3rem 3.3rem auto 2rem;
+  grid-gap: 1rem;
+}
+.Audio-Cover {
+  width: 3.3rem;
+  height: 3.3rem;
+
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+
+  grid-area: cover;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.Audio-ArtistBlock {
+  display: flex;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  color: #000000;
+
+  font-family: ArialMT;
+  font-size: 1.25rem;
+
+  grid-area: artistBlock;
+  -o-text-overflow: ellipsis;
+}
+.Audio-Artist {
+  margin: 0;
+  padding: 0;
+
+  font-family: ArialMT;
+  font-size: 1.25rem;
+}
+.Audio-TrackName {
+  margin: 0;
+  padding: 0;
+
+  font-family: ArialMT;
+  font-size: 1.25rem;
+}
+.Audio-TrackLabel {
+  cursor: pointer;
+
+  grid-area: track;
+}
+.Audio-Track {
+  width: 100%;
+
+  cursor: pointer;
+
+  grid-area: track;
+}
+
+.Audio-ButtonNext {
+  grid-area: next;
+}
+.Audio-ButtonPrev {
+  grid-area: prev;
+}
+
+.Audio-VolumeLabel {
+  align-self: center;
+
+  width: 100%;
+
+  cursor: pointer;
+
+  grid-area: rvolume;
+}
+.Audio-Volume {
+  cursor: pointer;
+}
+.Audio-VolumeValue {
+  align-self: center;
+
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Helvetica;
+  font-size: 14px;
+
+  grid-area: vvolume;
+}
+.Audio-Duration {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Helvetica;
+  font-size: 14px;
+
+  grid-area: duration;
+}
+
+.Audio {
+  grid-template-areas: 'cover artistBlock artistBlock .' 'cover track track duration' 'prev next rvolume vvolume';
+  grid-template-rows: 1.3rem 1.3rem 3.25rem;
+  grid-template-columns: 3.3rem 3.3rem 7rem 1.8rem;
+  grid-gap: 0.5rem;
+}
+.Audio-Artist {
+  font-size: 1.125rem;
+}
+.Audio-TrackName {
+  font-size: 1.125rem;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 8.25rem;
+  height: 2.75rem;
+}
+

@@ -1,18 +1,18 @@
-//import path from 'path';
-//import ExtractTextWebpackPlugin from 'extract-text-webpack-plugin';
-//import HtmlWebpackPlugin from 'html-webpack-plugin';
 const path = require('path');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, 'src', 'index.tsx')
+    mainDesktop: path.resolve(__dirname, 'src', 'index@desktop.tsx'),
+    mainMobile: path.resolve(__dirname, 'src', 'index@mobile.tsx')
   },
-  devtool: 'inline-source-map',
+  devtool: devMode ? 'inline-source-map' : false,
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -30,18 +30,27 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextWebpackPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader']
-        })
+        use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'image-webpack-loader',
+        enforce: 'pre'
+      },
+      {
+        test: /\.(jpe?g|png|svg|ico)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'img/'
+        }
       }
     ]
   },
   plugins: [
-    new ExtractTextWebpackPlugin({ filename: 'style.css' }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'public', 'index.html'),
-      filename: 'index.html'
-    })
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
+    }),
+    new CopyWebpackPlugin([{ from: 'src/components/common.blocks/images', to: 'images/' }])
   ]
 };

@@ -1,0 +1,37 @@
+.TileHeader-Title {
+  font-family: Helvetica-Bold;
+  font-size: 0.875rem;
+}
+.TileHeader-Source {
+  font-size: 0.75rem;
+
+  grid-column: 1 / span 2;
+}
+.TileHeader-Time {
+  font-size: 0.75rem;
+
+  grid-column: 3 / span 2;
+}
+.Tile-Description {
+  font-family: Helvetica;
+  font-size: 1.125rem;
+}
+.Tile-Data-Temperature {
+  font-size: 0.875rem;
+}
+.Tile-Data-TemperatureValue {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0.875rem;
+}
+.Tile-Data-Humidity {
+  font-size: 0.875rem;
+}
+.Tile-Data-HumidityValue {
+  font-size: 0.875rem;
+}
+.Tile-Data {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,15 @@
+.Header {
+  height: 6rem;
+
+  border-bottom: 1px solid #f0f0f0;
+
+  grid-template: 'logo nav' 'icon icon';
+  grid-auto-columns: min-content;
+  grid-template-rows: auto 1px;
+}
+.Header-Logo {
+  padding-left: 2.6rem;
+}
+.Header-Button {
+  display: none;
+}

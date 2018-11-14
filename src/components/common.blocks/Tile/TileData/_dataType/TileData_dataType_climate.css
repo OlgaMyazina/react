@@ -1,0 +1,54 @@
+.Data_dataType_climate {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  padding-right: 3.25rem;
+}
+.Tile-Data-Temperature {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: ArialMT;
+  font-size: 1.125rem;
+}
+
+.Tile-Data-Humidity {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: ArialMT;
+  font-size: 1.125rem;
+}
+
+.Tile-Data-TemperatureValue {
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Arial-BoldMT;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+}
+
+.Tile-Data-HumidityValue {
+  margin: 0;
+  padding: 0;
+
+  text-align: left;
+
+  color: #000000;
+
+  font-family: Arial-BoldMT;
+  font-size: 1.125rem;
+  line-height: 1.3rem;
+}
